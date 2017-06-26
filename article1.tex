@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[binary-units]{siunitx}
+\usepackage[running]{lineno}
+\usepackage{setspace}
+\usepackage[]{authblk} % options: affil-it
+\usepackage{natbib}
+
+\title{A Nice Title}
+
+\author{Gregory Paradis \thanks{Corresponding authour. Contact telephone number (418) 456-2208.}}
+\affil{\footnotesize Department of Forest Resources Management,
+  University of British Columbia. \texttt{gregory.paradis@ubcl.ca}}
+
+\begin{document}
+\maketitle
+
+%\clearpage
+\begin{abstract}
+A nice abstract.
+\end{abstract}
+
+%\linenumbers 
+%\doublespace 
+
+\clearpage
+\section{Introduction}
+\label{sec:introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% test citep format
+%\citep{paradis2013risk, paradis2015extending, gunn2007models}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The remainder of this paper is organized as follows.
+We describe our methodology in \S\ref{sec:methods}. 
+Results are presented in \S\ref{sec:results}, followed by discussion in \S\ref{sec:discussion} and concluding remarks in \S\ref{sec:conclusion}.
+
+\section{Methods}
+\label{sec:methods}
+
+Described methods.
+
+\section{Results}
+\label{sec:results}
+
+Describe results. 
+
+\section{Discussion}
+\label{sec:discussion}
+
+Discuss results here.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Insert concluding remarks here.
+
+
+\section{Acknowledgements}
+
+This study was supported by funding from the \emph{Awesome Patrons}.
+
+\begin{nolinenumbers}
+\bibliographystyle{apalike}
+\nocite{*} % adds all references in the bib file to the bibliography (cited or not)
+\bibliography{../pdf.bib}
+\end{nolinenumbers}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sample table and figure syntax
+
+% \begin{table}[h]
+% \caption{Table caption}
+% \label{tab:tabname}
+% \centering
+% %\renewcommand{\tabcolsep}{16pt}
+% \begin{tabular}{lrrrrrr}
+% \toprule
+% & \multicolumn{3}{c}{Base Scenario} & \multicolumn{3}{c}{Test Scenario} \tabularnewline
+% \emph{Species} & \emph{Min.} & \emph{Max.} & \emph{Mean} & \emph{Min.} & \emph{Max.} & \emph{Mean} \tabularnewline
+% \midrule
+% Hardwood AAC ($m^3 \times 10^{3}$)  & 20.8 & 20.8 & 20.8 & 20.8 & 103.7 & 58.4 \tabularnewline
+% Softwood AAC ($m^3 \times 10^{3}$)  & 205.5 & 323.8 & 258.4 & 313.7 & 584.1 & 486.9 \tabularnewline
+% Total AAC ($m^3 \times 10^{3}$) & 226.3 & 344.6 & 279.2 & 334.5 & 687.8 & 545.3 \tabularnewline
+% \midrule
+% Total Profit  ($\$ \times 10^{6}$) & 9.5 & 14.5 & 11.7 & 14.1 & 20.1 & 18.5 \tabularnewline 
+% Unit Profit (\$) & 41.9 & 42.2 & 42.1 & 25.9 & 42.2 & 35.1 \tabularnewline
+% \bottomrule
+% \end{tabular}
+% \end{table}
+
+% \begin{figure}[h]
+%   \centering
+%   %\includegraphics[width=\textwidth]{images/filename}
+%   \caption{Figure caption}
+%   \label{fig:figname}
+% \end{figure}
+
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
